@@ -10,7 +10,11 @@ export default new GraphQLObjectType({
   name: 'User',
   fields: {
     id: { type: GraphQLID },
-    title: { type: GraphQLString },
+    email: { type: GraphQLString },
+    firstName: { type: GraphQLString },
+    lastName: { type: GraphQLString },
+    userName: { type: GraphQLString },
+    companyName: { type: GraphQLString },
     favorites: {
       type: new GraphQLList(Favorite),
       resolve() {

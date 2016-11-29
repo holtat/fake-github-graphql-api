@@ -1,14 +1,13 @@
 import {
   GraphQLObjectType,
-  GraphQLID,
-  GraphQLInt
+  GraphQLID
 } from 'graphql';
 
 export default new GraphQLObjectType({
   name: 'Favorite',
   fields: {
     id: { type: GraphQLID },
-    userId: { type: GraphQLInt },
-    repositoryId: { type: GraphQLInt }
+    userId: { type: GraphQLID },
+    repositoryId: { type: GraphQLID }
   }
 })

@@ -11,6 +11,7 @@ export default new GraphQLObjectType({
   fields: {
     id: { type: GraphQLID },
     title: { type: GraphQLString },
+    description: { type: GraphQLString },
     favorites: {
       type: new GraphQLList(Favorite),
       resolve() {
